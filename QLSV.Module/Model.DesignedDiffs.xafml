@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="QLSV">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="22.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.1.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="KetQuaHocTap_ListView" IsGroupPanelVisible="True">
+      <Columns>
+        <ColumnInfo Id="Lop" SortOrder="Descending" GroupIndex="0" />
+      </Columns>
+    </ListView>
+    <ListView Id="SinhVien_KetQuaHocTaps_ListView">
+      <Columns>
+        <ColumnInfo Id="Lop" Index="-1" />
+        <ColumnInfo Id="MaSV" Index="-1" />
+        <ColumnInfo Id="SinhVien" Index="-1" />
+        <ColumnInfo Id="MonHoc" Index="0" />
+        <ColumnInfo Id="DiemTrenLop" Index="1" />
+        <ColumnInfo Id="DiemThi" Index="2" />
+        <ColumnInfo Id="DiemTongKet" Index="3" />
+        <ColumnInfo Id="HocKi" Index="4" />
+        <ColumnInfo Id="HanhKiem" Index="5" />
+        <ColumnInfo Id="GhiChu" Index="6" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

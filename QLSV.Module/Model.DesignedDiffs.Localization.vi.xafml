@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Delete" Caption="Xoá" />
+      <Action Id="DialogClose" Caption="Thoát" />
+      <Action Id="Logoff" Caption="Đăng xuất" />
+      <Action Id="Logon" Caption="Đăng nhập" />
+      <Action Id="New" Caption="Tạo mới" />
+      <Action Id="Refresh" Caption="Tải lại" />
+      <Action Id="RefreshAction" Caption="Tải lại" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="Thoát" />
+      <Action Id="Save" Caption="Lưu" />
+    </Actions>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Save" Caption="Lưu" />
+    </ActionToContainerMapping>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mật khẩu" />
+        <Member Name="UserName" Caption="Tài khoản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mật khẩu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Tài khoản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ModelDifference">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Tài khoản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyObjectPermissionsObject">
+      <OwnMembers>
+        <Member Name="DeleteState" Caption="Xoá" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject">
+      <OwnMembers>
+        <Member Name="DeleteState" Caption="Xoá" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Tài khoản" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Close" Value="Thoát" />
+      <LocalizationItem Name="Delete" Value="Xoá" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="Delete" Value="Xoá" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.SecurityRequestOperations">
+        <LocalizationItem Name="Delete" Value="Xoá" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Delete" Value="Xoá" />
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Delete" Caption="Xoá" />
+      <ValidationContext Id="Save" Caption="Lưu" />
+    </Contexts>
+  </Validation>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_Blazor_DetailView" Caption="Đăng nhập">
+      <Items>
+        <StaticText Id="LogonText" Text="Nhập tên người dùng và mật khẩu của bạn dưới đây." />
+      </Items>
+    </DetailView>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Đăng nhập" />
+  </Views>
+</Application>
