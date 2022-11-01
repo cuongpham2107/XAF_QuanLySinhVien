@@ -34,6 +34,7 @@ namespace QLSV.Module.BusinessObjects
             
         }
 
+        KhoaHoc khoaHoc;
         Khoa khoa;
         string tenLop;
         string maLop;
@@ -49,9 +50,27 @@ namespace QLSV.Module.BusinessObjects
         public string TenLop
         {
             get => tenLop;
-            set => SetPropertyValue(nameof(TenLop), ref tenLop, value);
+            set
+            {
+                SetPropertyValue(nameof(TenLop), ref tenLop, value);
+                
+            }
         }
-
+        [XafDisplayName("Khoá học")]
+        [RuleRequiredField("Bắt buộc phải có Lop.KhoaHoc", DefaultContexts.Save, "Trường dữ liệu không được để trống")]
+        public KhoaHoc KhoaHoc
+        {
+            get => khoaHoc;
+            set 
+            { 
+                SetPropertyValue(nameof(KhoaHoc), ref khoaHoc, value);
+                if (!IsLoading && !IsSaving)
+                {
+                    TenLop = $"{TenLop} {KhoaHoc}";
+                    MaLop = $"{MaLop} {KhoaHoc}";
+                }
+            }
+        }
         [XafDisplayName("Thuộc khoa")]
         [Association("Khoa-Lops")]
         [RuleRequiredField("Bắt buộc phải có Lop.Khoa", DefaultContexts.Save, "Trường dữ liệu không được để trống")]

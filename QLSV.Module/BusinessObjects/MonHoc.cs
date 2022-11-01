@@ -104,6 +104,14 @@ namespace QLSV.Module.BusinessObjects
     {
         [XafDisplayName("Học kỳ I")] hk1 = 1,
         [XafDisplayName("Học kỳ II")] hk2 = 2,
+        [XafDisplayName("Học kỳ III")] hk3 = 3,
+        [XafDisplayName("Học kỳ IV")] hk4 = 4,
+        [XafDisplayName("Học kỳ V")] hk5 = 5,
+        [XafDisplayName("Học kỳ VI")] hk6 = 6,
+        [XafDisplayName("Học kỳ VII")] hk7 = 7,
+        [XafDisplayName("Học kỳ VIII")] hk8 = 8,
+        [XafDisplayName("Học kỳ IX")] hk9 = 9,
+        [XafDisplayName("Học kỳ X")] hk10 = 10,
 
     }
 }

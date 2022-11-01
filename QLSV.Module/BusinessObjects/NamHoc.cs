@@ -17,7 +17,7 @@ namespace QLSV.Module.BusinessObjects
     [DefaultClassOptions]
     [ImageName("BO_Contact")]
     [XafDisplayName("Năm học")]
-    [DefaultProperty(nameof(TenNamHoc))]
+    [DefaultProperty(nameof(Nam))]
     [DefaultListViewOptions(MasterDetailMode.ListViewOnly, true, NewItemRowPosition.Top)]
     [ListViewFindPanel(true)]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
@@ -34,13 +34,16 @@ namespace QLSV.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
-        string tenNamHoc;
-        [XafDisplayName("Tên năm học")]
-        [RuleRequiredField("Bắt buộc phải có NamHoc.TenNamHoc", DefaultContexts.Save, "Trường dữ liệu không được để trống")]
-        public string TenNamHoc
+        int nam;
+        [XafDisplayName("Năm học"), ModelDefault("DisplayFormat", "{0:G}")]
+        public int Nam
         {
-            get => tenNamHoc;
-            set => SetPropertyValue(nameof(TenNamHoc), ref tenNamHoc, value);
+            get => nam;
+            set
+            {
+                SetPropertyValue(nameof(Nam), ref nam, value);
+               
+            }
         }
     }
 }

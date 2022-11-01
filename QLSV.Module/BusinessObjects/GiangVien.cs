@@ -101,6 +101,10 @@ namespace QLSV.Module.BusinessObjects
                 return GetCollection<MonHoc>(nameof(MonHocs));
             }
         }
+        [XafDisplayName("Danh sách tài khoản"),ToolTip("")]
+        [Association("GiangVien-ApplicationUsers")]
+        [VisibleInDetailView(false)]
+        public XPCollection<ApplicationUser> ApplicationUsers => GetCollection<ApplicationUser>(nameof(ApplicationUsers));
     }
     public enum PhanLoaiGV
     {

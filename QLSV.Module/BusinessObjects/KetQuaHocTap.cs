@@ -1,7 +1,9 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
+using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
@@ -22,6 +24,20 @@ namespace QLSV.Module.BusinessObjects
     [ListViewFindPanel(true)]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     [NavigationItem(Menu.DataMenuItem)]
+
+    [ListViewFilter("Tất cả", "", Index = 1)]
+    [ListViewFilter("Tích A", "[DiemTongKet] >= 8.5f And [DiemTongKet] <= 10.0f", Index = 2)]
+    [ListViewFilter("Tích B", "[DiemTongKet] >= 7.0f And [DiemTongKet] <= 8.4f", Index = 3)]
+    [ListViewFilter("Tích C", "[DiemTongKet] >= 5.5f And [DiemTongKet] <= 6.9f", Index = 4)]
+    [ListViewFilter("Tích D", "[DiemTongKet] >= 4.0f And [DiemTongKet] <= 5.4f", Index = 5)]
+    [ListViewFilter("Tích F", "[DiemTongKet] >= 0f And [DiemTongKet] <= 3.9f", Index = 6)]
+    
+
+    [Appearance("Học Lại", AppearanceItemType = "ViewItem", TargetItems = "*",
+    Criteria = "", Context = "ListView", FontColor = "Red", Priority = 3)]
+
+   
+
     public class KetQuaHocTap : BaseObject
     { 
         public KetQuaHocTap(Session session)
@@ -142,7 +158,7 @@ namespace QLSV.Module.BusinessObjects
             {
                 if (!IsLoading && !IsSaving)
                 {
-                    if(DiemTongKet > 0 && DiemTongKet <= 3.9)
+                    if(DiemTongKet >= 0 && DiemTongKet <= 3.9)
                     {
                         return "F";
                     }
@@ -183,7 +199,22 @@ namespace QLSV.Module.BusinessObjects
                 return HocKi.hk1;
             }
         }
-
+        [XafDisplayName("Năm học")]
+        [ModelDefault("AllowEdit", "False")]
+        public NamHoc NamHoc
+        {
+            get
+            {
+                if (!IsLoading && !IsSaving)
+                {
+                    if (MonHoc != null)
+                    {
+                        return MonHoc.NamHoc;
+                    }
+                }
+                return null;
+            }
+        }
         //[XafDisplayName("Hạnh kiểm")]
         //public HanhKiem HanhKiem
         //{
@@ -191,10 +222,20 @@ namespace QLSV.Module.BusinessObjects
         //    set => SetPropertyValue(nameof(HanhKiem), ref hanhKiem, value);
         //}
         [XafDisplayName("Ghi chú")]
+        [ModelDefault("AllowEdit", "False")]
         public string GhiChu
         {
-            get => ghiChu;
-            set => SetPropertyValue(nameof(GhiChu), ref ghiChu, value);
+            get
+            {
+                if(!IsLoading && !IsSaving)
+                {
+                    if(DiemTongKet > 0 && DiemTongKet <= 3.9)
+                    {
+                        return "HỌC LẠI";
+                    }
+                }
+                return null;
+            }
         }
 
     }

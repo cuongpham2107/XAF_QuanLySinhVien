@@ -1,6 +1,7 @@
 ﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Blazor;
+using DevExpress.ExpressApp.Blazor.Templates;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
 using DevExpress.ExpressApp.SystemModule;
@@ -14,6 +15,15 @@ public class QLSVBlazorApplication : BlazorApplication {
         ApplicationName = "QLSV";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
         DatabaseVersionMismatch += QLSVBlazorApplication_DatabaseVersionMismatch;
+        CustomizeTemplate += (s, e) => {
+            if (e.Template is IPopupWindowTemplateSize size)
+            {
+                size.MaxWidth = "80vw";
+                //size.Width = "1000px";
+                //size.MaxHeight = "70vh";
+                //size.Height = "800px";
+            }
+        };
     }
     protected override void OnSetupStarted() {
         base.OnSetupStarted();

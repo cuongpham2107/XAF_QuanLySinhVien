@@ -12,3 +12,17 @@ C:\Users\cuong\source\repos\QLSV\QLSV.Module\obj\Debug\net6.0\QLSV.Module.pdb
 C:\Users\cuong\source\repos\QLSV\QLSV.Module\obj\Debug\net6.0\ref\QLSV.Module.dll
 C:\Users\cuong\source\repos\QLSV\QLSV.Module\bin\Debug\net6.0\vi\QLSV.Module.resources.dll
 C:\Users\cuong\source\repos\QLSV\QLSV.Module\obj\Debug\net6.0\vi\QLSV.Module.resources.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\bin\Debug\net6.0\QLSV.Module.deps.json
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\bin\Debug\net6.0\QLSV.Module.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\bin\Debug\net6.0\QLSV.Module.pdb
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\bin\Debug\net6.0\vi\QLSV.Module.resources.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.csproj.AssemblyReference.cache
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.AssemblyInfoInputs.cache
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.AssemblyInfo.cs
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.csproj.CoreCompileInputs.cache
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\vi\QLSV.Module.resources.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\refint\QLSV.Module.dll
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\QLSV.Module.pdb
+C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Module\obj\Debug\net6.0\ref\QLSV.Module.dll

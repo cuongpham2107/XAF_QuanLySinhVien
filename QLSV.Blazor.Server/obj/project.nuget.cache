@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y4YdN9mdNAAkDwFt6cS1/04jMc6KQDjiBQgiGyS9L/CnIfqOk4I9kxDCUJ7TN8Fell3jsdeh0lfFRGwCz/7hqQ==",
+  "dgSpecHash": "LOkXuMeD3Kjr2JaJ0xw5zBmIssEH08xhsojU8dJH+Kv5jp4sn9Ky0zjTnA/LYsl60xtbit+eR/dsdUeUnVl7bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cuong\\source\\repos\\QLSV\\QLSV.Blazor.Server\\QLSV.Blazor.Server.csproj",
+  "projectFilePath": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\QLSV.Blazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cuong\\.nuget\\packages\\azure.core\\1.4.1\\azure.core.1.4.1.nupkg.sha512",
     "C:\\Users\\cuong\\.nuget\\packages\\azure.identity\\1.2.3\\azure.identity.1.2.3.nupkg.sha512",

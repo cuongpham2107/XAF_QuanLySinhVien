@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0dP/T/xcQqPeJIUGRmQNyR9g44SHdlbhTMAfdbSzu9dJDTUnYMMJe5Ic5tW+oMN28rVx+ircxwGeFhWpVhdKcw==",
+  "dgSpecHash": "N6ywTByPQppgNLiAAxf5eYbv2NUZXQfY5Xzvu4ffTm5nXvlc6H3ood88FYtpA1Y7i3ja02mpbH+AQ5Dya3pSPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cuong\\source\\repos\\QLSV\\QLSV.Module\\QLSV.Module.csproj",
+  "projectFilePath": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.charts\\22.1.5\\devexpress.charts.22.1.5.nupkg.sha512",
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.charts.core\\22.1.5\\devexpress.charts.core.22.1.5.nupkg.sha512",

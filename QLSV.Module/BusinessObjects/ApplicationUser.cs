@@ -27,4 +27,12 @@ public class ApplicationUser : PermissionPolicyUser, ISecurityUserWithLoginInfo 
         result.User = this;
         return result;
     }
+    GiangVien giangVien;
+    [DevExpress.ExpressApp.DC.XafDisplayName("Giảng viên")]
+    [Association("GiangVien-ApplicationUsers")]
+    public GiangVien GiangVien
+    {
+        get => giangVien;
+        set => SetPropertyValue(nameof(GiangVien), ref giangVien, value);
+    }
 }

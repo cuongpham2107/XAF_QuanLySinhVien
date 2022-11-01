@@ -2,7 +2,39 @@
 <Application Title="QLSV">
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+    <Class Name="QLSV.Module.BusinessObjects.KetQuaHocTap">
+      <AppearanceRules>
+        <AppearanceRule Id="Học Lại" Visibility="" Criteria="[DiemTongKet] &gt;= 0.0f And [DiemTongKet] &lt;= 3.9f" FontStyle="Bold" />
+      </AppearanceRules>
+    </Class>
   </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="📁 Danh mục">
+        <Items>
+          <Item Id="GiangVien_ListView" Caption="🧑‍🏫 Giảng viên" />
+          <Item Id="Khoa_ListView" Caption="🏢 Khoa" />
+          <Item Id="KhoaHoc_ListView" Caption="📋 Khoá" />
+          <Item Id="MonHoc_ListView" Caption="📚 Môn học" />
+          <Item Id="NamHoc_ListView" Caption="📆 Năm học" />
+        </Items>
+      </Item>
+      <Item Id="🛅 Quản lý sinh viên">
+        <Items>
+          <Item Id="KetQuaHocTap_ListView" Caption="📖 Kết quả học tập" />
+          <Item Id="Lop_ListView" Caption="🏤 Lớp" />
+          <Item Id="SinhVien_ListView" Caption="🧑‍🎓 Sinh viên" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="🖨 Quản lý báo cáo">
+        <Items>
+          <Item Id="Dashboards" Caption="📄 Tổng quan" />
+          <Item Id="ReportsV2" Caption="🖨 Báo cáo" />
+        </Items>
+      </Item>
+      <Item Id="State Machine" Removed="True" />
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
@@ -12,11 +44,138 @@
   </SchemaModules>
   <Views>
     <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="GiangVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26.444833625218916">
+            <LayoutGroup Id="GiangVien" Caption="Giảng Viên" RelativeSize="100">
+              <LayoutGroup Id="GiangVien_col1" RelativeSize="39.25353925353925">
+                <LayoutItem Id="MaGV" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="TenGiaoVien" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="GioiTinh" RelativeSize="50" />
+                <LayoutItem Id="DiaChi" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="GiangVien_col2" RelativeSize="60.74646074646075" Direction="Horizontal">
+                <LayoutGroup Id="Auto2ff80654-c4cc-4725-8caa-fac2b007ba4d" ShowCaption="False" Caption="Auto2ff80654-c4cc-4725-8caa-fac2b007ba4d(9)" Index="0" RelativeSize="61.86440677966102" IsNewNode="True">
+                  <LayoutItem Id="DiaChi" ViewItem="DiaChi" Index="0" RelativeSize="28.571428571428573" IsNewNode="True" />
+                  <LayoutItem Id="SoDienThoai" ViewItem="SoDienThoai" Index="1" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="Email" ViewItem="Email" Index="2" RelativeSize="21.428571428571427" IsNewNode="True" />
+                  <LayoutItem Id="PhanLoaiGV" ViewItem="PhanLoaiGV" Index="3" RelativeSize="28.571428571428573" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Index="1" RelativeSize="38.13559322033898" Caption="Item1" IsNewNode="True">
+                  <LayoutItem Id="Anh" ViewItem="Anh" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Anh" RelativeSize="29.310344827586206" Removed="True" />
+                <LayoutItem Id="Email" RelativeSize="15.686274509803921" Removed="True" />
+                <LayoutItem Id="PhanLoaiGV" RelativeSize="15.686274509803921" Removed="True" />
+                <LayoutItem Id="SoDienThoai" RelativeSize="20.915032679738562" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="MonHocs_Group" Direction="Vertical" RelativeSize="73.55516637478108">
+            <LayoutItem Id="MonHocs" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KetQuaHocTap_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="KetQuaHocTap" Caption="Kết Quả Học Tập" RelativeSize="100">
+              <LayoutGroup Id="KetQuaHocTap_col1" RelativeSize="49.88962472406181">
+                <LayoutItem Id="MaSV" RelativeSize="5.528455284552845" />
+                <LayoutItem Id="SinhVien" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="Lop" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="MonHoc" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="DiemTrenLop" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="DiemThi" RelativeSize="78.86178861788618" />
+              </LayoutGroup>
+              <LayoutGroup Id="KetQuaHocTap_col2" RelativeSize="50.11037527593819">
+                <LayoutItem Id="DiemTongKet" RelativeSize="5.528455284552845" />
+                <LayoutItem Id="DiemHeSo4" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="DiemChu" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="HocKi" RelativeSize="3.902439024390244" />
+                <LayoutItem Id="GhiChu" RelativeSize="82.76422764227642" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="KetQuaHocTap_ListView" IsGroupPanelVisible="True">
       <Columns>
         <ColumnInfo Id="Lop" SortOrder="Descending" GroupIndex="0" />
       </Columns>
+      <Filters>
+        <Filter Id="Tích A" Criteria="[DiemTongKet] &gt;= 8.5f And [DiemTongKet] &lt;= 10.0f" />
+      </Filters>
     </ListView>
+    <DetailView Id="MonHoc_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="23.939393939393938">
+            <LayoutGroup Id="MonHoc" Caption="Môn Học" RelativeSize="100">
+              <LayoutGroup Id="MonHoc_col1" RelativeSize="49.88962472406181">
+                <LayoutItem Id="MaMonHoc" RelativeSize="29.310344827586206" />
+                <LayoutItem Id="TenMon" RelativeSize="20.689655172413794" />
+                <LayoutItem Id="SoTinChi" RelativeSize="20.689655172413794" />
+                <LayoutItem Id="GiangVien" RelativeSize="29.310344827586206" />
+              </LayoutGroup>
+              <LayoutGroup Id="MonHoc_col2" RelativeSize="50.11037527593819">
+                <LayoutItem Id="HocKi" RelativeSize="29.310344827586206" />
+                <LayoutItem Id="NamHoc" RelativeSize="20.689655172413794" />
+                <LayoutItem Id="Khoa" RelativeSize="50" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="KetQuaHocTaps_Group" Direction="Vertical" RelativeSize="76.06060606060606">
+            <LayoutItem Id="KetQuaHocTaps" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="MonHoc_KetQuaHocTaps_ListView" IsGroupPanelVisible="True">
+      <Columns>
+        <ColumnInfo Id="DiemTrenLop" Index="2" />
+        <ColumnInfo Id="Lop" SortOrder="Ascending" GroupIndex="0" Index="3" />
+      </Columns>
+    </ListView>
+    <DetailView Id="SinhVien_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="31.099656357388316">
+            <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="SinhVien" ShowCaption="True" Caption="Sinh Viên" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="SinhVien_col1" ShowCaption="False" Index="0" RelativeSize="41.25" IsNewNode="True">
+                  <LayoutItem Id="MaSinhVien" ViewItem="MaSinhVien" Index="0" RelativeSize="23.529411764705884" IsNewNode="True" />
+                  <LayoutItem Id="HoTen" ViewItem="HoTen" Index="1" RelativeSize="17.647058823529413" IsNewNode="True" />
+                  <LayoutItem Id="NgaySinh" ViewItem="NgaySinh" Index="2" RelativeSize="17.647058823529413" IsNewNode="True" />
+                  <LayoutItem Id="GioiTinh" ViewItem="GioiTinh" Index="3" RelativeSize="17.647058823529413" IsNewNode="True" />
+                  <LayoutItem Id="DiaChi" ViewItem="DiaChi" Index="4" RelativeSize="23.529411764705884" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="SinhVien_col2" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="58.75" IsNewNode="True">
+                  <LayoutGroup Id="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0" ShowCaption="False" Caption="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0(11)" Index="0" RelativeSize="64.09574468085107" IsNewNode="True">
+                    <LayoutItem Id="SoDienThoai" ViewItem="SoDienThoai" Index="0" RelativeSize="23.529411764705884" IsNewNode="True" />
+                    <LayoutItem Id="Email" ViewItem="Email" Index="1" RelativeSize="17.647058823529413" IsNewNode="True" />
+                    <LayoutItem Id="Lop" ViewItem="Lop" Index="2" RelativeSize="17.647058823529413" IsNewNode="True" />
+                    <LayoutItem Id="DiemTichLuy" ViewItem="DiemTichLuy" Index="3" RelativeSize="17.647058823529413" IsNewNode="True" />
+                    <LayoutItem Id="HanhKiem" ViewItem="HanhKiem" Index="4" RelativeSize="23.529411764705884" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item2" ShowCaption="False" CaptionLocation="Top" Index="1" RelativeSize="35.90425531914894" Caption="Item2" IsNewNode="True">
+                    <LayoutItem Id="Anh" ViewItem="Anh" Index="0" RelativeSize="100" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="SinhVien" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="KetQuaHocTaps_Group" Direction="Vertical" RelativeSize="68.90034364261169">
+            <LayoutItem Id="KetQuaHocTaps" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="SinhVien_KetQuaHocTaps_ListView">
       <Columns>
         <ColumnInfo Id="Lop" Index="-1" />
@@ -27,9 +186,14 @@
         <ColumnInfo Id="DiemThi" Index="2" />
         <ColumnInfo Id="DiemTongKet" Index="3" />
         <ColumnInfo Id="HocKi" Index="4" />
-        <ColumnInfo Id="HanhKiem" Index="5" />
         <ColumnInfo Id="GhiChu" Index="6" />
       </Columns>
+    </ListView>
+    <ListView Id="SinhVien_ListView">
+      <Filters>
+        <Filter Id="Xếp loại Xuất sắc" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,XX#" />
+        <Filter Id="Xếp loại Tốt" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,T#" />
+      </Filters>
     </ListView>
   </Views>
 </Application>
