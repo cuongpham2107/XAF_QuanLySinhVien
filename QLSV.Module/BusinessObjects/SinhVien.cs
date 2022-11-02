@@ -2,7 +2,6 @@
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
-using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
@@ -24,12 +23,6 @@ namespace QLSV.Module.BusinessObjects
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     [NavigationItem(Menu.DataMenuItem)]
 
-    [ListViewFilter("Tất cả", "", Index = 1)]
-    [ListViewFilter("Xếp loại Xuất sắc", "[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,XX#", Index = 2)]
-    [ListViewFilter("Xếp loại Tốt", "[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,T#", Index = 3)]
-    [ListViewFilter("Xếp loại Khá", "[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,K#", Index = 4)]
-    [ListViewFilter("Xếp loại Trung bình", "[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,TB#", Index = 5)]
-    [ListViewFilter("Xếp loại Yếu", "[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,Y#", Index = 6)]
     public class SinhVien : BaseObject
     { 
         public SinhVien(Session session)
@@ -39,13 +32,9 @@ namespace QLSV.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
+            
         }
-
-        protected override void OnLoaded()
-        {
-            base.OnLoaded();
-            DiemTichLuy = KetQuaHocTaps.Sum(i => i.DiemTongKet) / KetQuaHocTaps.Count();
-        }
+       
         string nienKhoa;
         float diemTichLuy;
         HanhKiem hanhKiem;
@@ -65,7 +54,6 @@ namespace QLSV.Module.BusinessObjects
             get => maSinhVien;
             set => SetPropertyValue(nameof(MaSinhVien), ref maSinhVien, value);
         }
-
         [XafDisplayName("Họ và tên")]
         [RuleRequiredField("Bắt buộc phải có SinhVien.HoTen", DefaultContexts.Save, "Trường dữ liệu không được để trống")]
         public string HoTen
@@ -121,11 +109,24 @@ namespace QLSV.Module.BusinessObjects
             set => SetPropertyValue(nameof(Lop), ref lop, value);
         }
         [XafDisplayName("Điểm tích luỹ")]
-        [ModelDefault("AllowEdit","False")]
+        [ModelDefault("AllowEdit", "False")]
         public float DiemTichLuy
         {
-            get => diemTichLuy;
-            set => SetPropertyValue(nameof(DiemTichLuy), ref diemTichLuy, value);
+            get
+            {
+                if(!IsLoading & !IsSaving)
+                {   
+                    if(KetQuaHocTaps != null)
+                    {
+                        return KetQuaHocTaps.Sum(i => i.DiemTongKet) / KetQuaHocTaps.Count();
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                return 0;
+            }
         }
         [XafDisplayName("Hạnh kiểm")]
         public HanhKiem HanhKiem
@@ -149,10 +150,8 @@ namespace QLSV.Module.BusinessObjects
                 return GetCollection<KetQuaHocTap>(nameof(KetQuaHocTaps));
             }
         }
-        
-        
-        
     }
+
     public enum GioiTinh
     {
         [XafDisplayName("Nam")] Nam = 0,

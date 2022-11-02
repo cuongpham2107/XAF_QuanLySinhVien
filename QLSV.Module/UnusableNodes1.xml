@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="SinhVien_ListView">
+      <Filters Id="Filters">
+        <Filter Id="Xếp loại Xuất sắc" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,XX#" />
+        <Filter Id="Xếp loại Tốt" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,T#" />
+      </Filters>
+    </ListView>
+  </Views>
+</Application>

@@ -144,25 +144,26 @@
     <DetailView Id="SinhVien_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="31.099656357388316">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="34.223706176961606">
             <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
               <LayoutGroup Id="SinhVien" ShowCaption="True" Caption="Sinh Viên" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                <LayoutGroup Id="SinhVien_col1" ShowCaption="False" Index="0" RelativeSize="41.25" IsNewNode="True">
-                  <LayoutItem Id="MaSinhVien" ViewItem="MaSinhVien" Index="0" RelativeSize="23.529411764705884" IsNewNode="True" />
-                  <LayoutItem Id="HoTen" ViewItem="HoTen" Index="1" RelativeSize="17.647058823529413" IsNewNode="True" />
-                  <LayoutItem Id="NgaySinh" ViewItem="NgaySinh" Index="2" RelativeSize="17.647058823529413" IsNewNode="True" />
-                  <LayoutItem Id="GioiTinh" ViewItem="GioiTinh" Index="3" RelativeSize="17.647058823529413" IsNewNode="True" />
-                  <LayoutItem Id="DiaChi" ViewItem="DiaChi" Index="4" RelativeSize="23.529411764705884" IsNewNode="True" />
+                <LayoutGroup Id="SinhVien_col1" ShowCaption="False" Index="0" RelativeSize="41.16899618805591" IsNewNode="True">
+                  <LayoutItem Id="MaSinhVien" ViewItem="MaSinhVien" Index="0" RelativeSize="20" IsNewNode="True" />
+                  <LayoutItem Id="HoTen" ViewItem="HoTen" Index="1" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="NgaySinh" ViewItem="NgaySinh" Index="2" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="GioiTinh" ViewItem="GioiTinh" Index="3" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="DiaChi" ViewItem="DiaChi" Index="4" RelativeSize="35" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="SinhVien_col2" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="58.75" IsNewNode="True">
-                  <LayoutGroup Id="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0" ShowCaption="False" Caption="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0(11)" Index="0" RelativeSize="64.09574468085107" IsNewNode="True">
-                    <LayoutItem Id="SoDienThoai" ViewItem="SoDienThoai" Index="0" RelativeSize="23.529411764705884" IsNewNode="True" />
-                    <LayoutItem Id="Email" ViewItem="Email" Index="1" RelativeSize="17.647058823529413" IsNewNode="True" />
-                    <LayoutItem Id="Lop" ViewItem="Lop" Index="2" RelativeSize="17.647058823529413" IsNewNode="True" />
-                    <LayoutItem Id="DiemTichLuy" ViewItem="DiemTichLuy" Index="3" RelativeSize="17.647058823529413" IsNewNode="True" />
-                    <LayoutItem Id="HanhKiem" ViewItem="HanhKiem" Index="4" RelativeSize="23.529411764705884" IsNewNode="True" />
+                <LayoutGroup Id="SinhVien_col2" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="58.83100381194409" IsNewNode="True">
+                  <LayoutGroup Id="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0" ShowCaption="False" Caption="Autoa1aae40f-23e7-457f-a3fb-e33cf73286c0(11)" Index="0" RelativeSize="63.93088552915767" IsNewNode="True">
+                    <LayoutItem Id="SoDienThoai" ViewItem="SoDienThoai" Index="0" RelativeSize="20" IsNewNode="True" />
+                    <LayoutItem Id="Email" ViewItem="Email" Index="1" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="Lop" ViewItem="Lop" Index="2" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="NienKhoa" ViewItem="NienKhoa" Index="3" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="DiemTichLuy" ViewItem="DiemTichLuy" Index="4" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="HanhKiem" ViewItem="HanhKiem" Index="5" RelativeSize="20" IsNewNode="True" />
                   </LayoutGroup>
-                  <LayoutGroup Id="Item2" ShowCaption="False" CaptionLocation="Top" Index="1" RelativeSize="35.90425531914894" Caption="Item2" IsNewNode="True">
+                  <LayoutGroup Id="Item2" ShowCaption="False" CaptionLocation="Top" Index="1" RelativeSize="36.06911447084233" Caption="Item2" IsNewNode="True">
                     <LayoutItem Id="Anh" ViewItem="Anh" Index="0" RelativeSize="100" IsNewNode="True" />
                   </LayoutGroup>
                 </LayoutGroup>
@@ -170,7 +171,7 @@
             </TabbedGroup>
             <LayoutGroup Id="SinhVien" Removed="True" />
           </LayoutGroup>
-          <LayoutGroup Id="KetQuaHocTaps_Group" Direction="Vertical" RelativeSize="68.90034364261169">
+          <LayoutGroup Id="KetQuaHocTaps_Group" Direction="Vertical" RelativeSize="65.7762938230384">
             <LayoutItem Id="KetQuaHocTaps" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
@@ -188,12 +189,6 @@
         <ColumnInfo Id="HocKi" Index="4" />
         <ColumnInfo Id="GhiChu" Index="6" />
       </Columns>
-    </ListView>
-    <ListView Id="SinhVien_ListView">
-      <Filters>
-        <Filter Id="Xếp loại Xuất sắc" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,XX#" />
-        <Filter Id="Xếp loại Tốt" Criteria="[HanhKiem] = ##Enum#QLSV.Module.BusinessObjects.HanhKiem,T#" />
-      </Filters>
     </ListView>
   </Views>
 </Application>

@@ -215,12 +215,7 @@ namespace QLSV.Module.BusinessObjects
                 return null;
             }
         }
-        //[XafDisplayName("Hạnh kiểm")]
-        //public HanhKiem HanhKiem
-        //{
-        //    get => hanhKiem;
-        //    set => SetPropertyValue(nameof(HanhKiem), ref hanhKiem, value);
-        //}
+        
         [XafDisplayName("Ghi chú")]
         [ModelDefault("AllowEdit", "False")]
         public string GhiChu
