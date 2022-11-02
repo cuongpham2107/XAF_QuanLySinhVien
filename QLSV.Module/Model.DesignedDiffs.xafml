@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application Title="QLSV">
+<Application Title="Quản lý sinh viên" VersionFormat="Version 0.0.1">
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
     <Class Name="QLSV.Module.BusinessObjects.KetQuaHocTap">

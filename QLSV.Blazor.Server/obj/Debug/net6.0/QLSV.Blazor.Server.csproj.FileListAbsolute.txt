@@ -292,3 +292,4 @@ C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Blazor.Server\obj\Debug\net6
 C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Blazor.Server\obj\Debug\net6.0\QLSV.Blazor.Server.pdb
 C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Blazor.Server\obj\Debug\net6.0\QLSV.Blazor.Server.genruntimeconfig.cache
 C:\Users\cuong\Source\Repos\XAF_QuanLySinhVien\QLSV.Blazor.Server\obj\Debug\net6.0\ref\QLSV.Blazor.Server.dll
+C:\Users\cuong\source\repos\XAF_QuanLySinhVien\QLSV.Blazor.Server\bin\Debug\net6.0\Model_vi.xafml

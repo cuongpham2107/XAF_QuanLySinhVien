@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj": {}
+    "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj": {
+    "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj",
+        "projectUniqueName": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj",
         "projectName": "QLSV.Module",
-        "projectPath": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj",
+        "projectPath": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Module\\QLSV.Module.csproj",
         "packagesPath": "C:\\Users\\cuong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Module\\obj\\",
+        "outputPath": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Module\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"

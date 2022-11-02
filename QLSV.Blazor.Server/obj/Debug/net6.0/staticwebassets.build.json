@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Tq1dof4+mobkyLJj/R6bHqUw92FUO21iX2rVbeO2ypE=",
+  "Hash": "8Vu8C5NLoxuzV37j7aGbUZIScXA2kJzUSAkar6s7KOg=",
   "Source": "QLSV.Blazor.Server",
   "BasePath": "_content/QLSV.Blazor.Server",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "QLSV.Blazor.Server\\wwwroot",
       "Source": "QLSV.Blazor.Server",
-      "ContentRoot": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/QLSV.Blazor.Server",
       "Pattern": "**"
     }
@@ -3604,10 +3604,10 @@
       "OriginalItemSpec": "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.expressapp.office.blazor\\22.1.5\\staticwebassets\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\css\\site.css",
       "SourceId": "QLSV.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/QLSV.Blazor.Server",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -3621,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\favicon.ico",
       "SourceId": "QLSV.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/QLSV.Blazor.Server",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -3638,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\images\\Logo.svg",
+      "Identity": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\images\\Logo.svg",
       "SourceId": "QLSV.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/QLSV.Blazor.Server",
       "RelativePath": "images/Logo.svg",
       "AssetKind": "All",
@@ -3655,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo.svg"
     },
     {
-      "Identity": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
+      "Identity": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
       "SourceId": "QLSV.Blazor.Server",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\cuong\\Source\\Repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\cuong\\source\\repos\\XAF_QuanLySinhVien\\QLSV.Blazor.Server\\wwwroot\\",
       "BasePath": "_content/QLSV.Blazor.Server",
       "RelativePath": "images/SplashScreen.svg",
       "AssetKind": "All",

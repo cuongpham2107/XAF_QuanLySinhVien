@@ -35,3 +35,12 @@ div .logon-bottom-toolbar {
 .middle-text-separator {
     display: none;
 }
+
+.loading-image {
+    width: 115px;
+    height: 115px;
+}
+
+div#loadingBackground {
+    background-color: #fff !important;
+}

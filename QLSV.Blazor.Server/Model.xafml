@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
-  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor">
-  </Views>
+<Application Title="Quản lý sinh viên" VersionFormat="Version 0.0.1">
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="22.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.1.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" />
 </Application>
